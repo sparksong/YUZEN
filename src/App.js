@@ -1,21 +1,30 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {
+  HashRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+} from 'react-router-dom';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+import Home from './components/Home/Home';
+
+import './styles/main.css';
+
+const App = () => (
+  <div className="grid-container">
+    <Router>
+      <Switch>
+        <Redirect exact from="/" to="/home" />
+        <Route
+          path="/home"
+          component={Home}
+        />
+        {/* OTHERWISE (no path!) */}
+        <Route render={() => <h1>404</h1>} />
+
+      </Switch>
+    </Router>
+  </div>
+);
 
 export default App;
