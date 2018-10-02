@@ -25,10 +25,6 @@ class PatientLog extends Component {
         // this.props.dispatch({ type: 'GET_CURRENT_THERAPIST' });
     }
 
-    // home = () => {
-    //     this.props.history.push('patientHome');
-    // }
-
     handleChangeFor = (propertyName) => {
         return (event) => {
             this.setState({
@@ -71,7 +67,6 @@ class PatientLog extends Component {
                     </Grid>
                     <input placeholder="Current Activity" onChange={this.handleChangeFor("activity")} />
                     <Button variant="raised" onClick={this.addLog}>Submit</Button>
-                    {/* <Button variant="raised" onClick={this.home}>Back</Button> */}
                 </Grid>
             </div>
         );

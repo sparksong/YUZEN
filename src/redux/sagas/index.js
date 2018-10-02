@@ -1,4 +1,4 @@
-import { all, takeEvery, call, put as dispatch } from 'redux-saga/effects';
+import { all } from 'redux-saga/effects';
 
 export default function* rootSaga() {
   // yield takeEvery('POST_LOG', postLog)
