@@ -51,7 +51,7 @@ class PatientLog extends Component {
                 <Grid container justify="center" id="welcome">
                     <Grid item xs={2}></Grid>
                     <Grid item xs={8}>
-                        <h2>Record Your Mood</h2>
+                        <h2>Yuzen Translation</h2>
                     </Grid>
                     <Grid item xs={2}></Grid>
                     <Grid item xs={12}>
