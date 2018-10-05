@@ -55,7 +55,7 @@ class PatientLog extends Component {
                     </Grid>
                     <Grid item xs={2}></Grid>
                     <Grid item xs={12}>
-                        <p>Rate the severity of your depressed mood from 0 (none) to 10 (severe) </p>
+                        <p>We can handle all of your translation needs </p>
                     </Grid>
                     <Grid item xs={4}></Grid>
                     <Grid item xs={4}>
