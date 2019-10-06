@@ -1,15 +1,16 @@
 import React from 'react';
+import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <React.Fragment>
+      <Navbar/>
+
         <h2>
           Yuzen Translation. (Under Construction)
         </h2>
-      </header>
-    </div>
+    </React.Fragment>
   );
 }
 
