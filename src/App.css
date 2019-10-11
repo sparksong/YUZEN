@@ -33,8 +33,27 @@
   margin: 0 15px;
   font-weight: bold;
 }
-
 /*end navbar styles*/
+
+/*start translation styles*/
+.translate_container {
+  display: block;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.translate_header {
+  color: #6090d8;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.translate_content {
+  font-size: 16px;
+}
+/*end translation styles*/
 
 @media screen and (min-width: 970px) {
   .navbar_logo {
@@ -42,5 +61,10 @@
     top: -15px;
     left: 15px;
   }
+
+  .translate_container {
+    padding: 0 130px;
+  }
+  
 }
 
