@@ -7,6 +7,7 @@
   background: #003399;
   top: 0;
   border-bottom: 5px solid #000000;
+  z-index: 10;
 }
 
 .navbar_logo {
