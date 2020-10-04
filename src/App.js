@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Translation from './components/Translation';
 import Welcome from './components/Welcome';
 import './App.css';
@@ -8,7 +9,7 @@ import PresentationCoaching from './components/PresentationCoaching';
 
 function App() {
   return (
-    <React.Fragment>
+    <>
       <Navbar />
       <h2>
         Yuzen Translation. (Under Construction)
@@ -17,7 +18,8 @@ function App() {
       <Translation />
       <Proofreading />
       <PresentationCoaching />
-    </React.Fragment>
+      <Footer />
+    </>
   );
 }
 
