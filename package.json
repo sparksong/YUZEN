@@ -1,32 +1,27 @@
 {
-  "name": "yuzen",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.10.2",
-    "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "yuzen-next",
+	"version": "0.1.0",
+	"description": "Application for YUZEN Translation",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sparksong/YUZEN"
+	},
+	"private": true,
+	"main": "index.js",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start"
+	},
+	"keywords": [],
+	"author": "YUZEN Team",
+	"license": "ISC",
+	"dependencies": {
+		"@material-ui/core": "^4.11.0",
+		"@material-ui/icons": "^4.9.1",
+		"next": "^9.5.3",
+		"react": "^16.13.1",
+		"react-anchor-link-smooth-scroll": "^1.0.12",
+		"react-dom": "^16.13.1"
+	}
 }
