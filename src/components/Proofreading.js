@@ -5,6 +5,7 @@ class Proofreading extends React.PureComponent {
     render() {
         return (
             <div id="proofreading" class="section_container">
+                <div class="section_text_container">
                 <div class="section_header">
                     <h2>Proofreading</h2>
                 </div>
@@ -13,6 +14,7 @@ class Proofreading extends React.PureComponent {
                     <p>We will return your document to you with the 'changes tracked.'</p>
                     <p>(Please note that should a document require heavy editing, YUZEN Translation will discuss this with the client.)</p>
                     <p>Please send us your documents as attachments (or as a link to documents or a website) in an email to contact@yuzentranslation.com; we will acknowledge receipt within two days and provide you with an estimated date of completion. (For websites we will provide a word document with comments relating to each page).</p>
+                </div>
                 </div>
             </div>
         )
