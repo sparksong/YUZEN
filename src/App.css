@@ -21,6 +21,11 @@
   left: 15px;
 }
 
+.navbar_logo a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 .navbar_links {
   position: relative;
   display: block;
@@ -36,25 +41,136 @@
 }
 /*end navbar styles*/
 
-/*start translation styles*/
-.translate_container {
+/*start section styles*/
+.section_container {
   display: block;
   position: relative;
   top: 15px;
   text-align: center;
-  padding: 0 30px;
+  /*background-image:linear-gradient(rgba(255,255,255,.9), rgba(0,0,0,.2), rgba(0,0,0,.2), rgba(255,255,255, .9));*/
+  height: 900px;
 }
 
-.translate_header {
+.section_text_container {
+  background: #FFFFFF;
+  position: relative;
+  display: block;
+  top: -20px;
+  padding: 35px 50px 25px 50px;
+  box-shadow: 10px 10px 35px #999999;
+}
+
+.section_header {
+  position: relative;
+  display: block;
+}
+
+.section_header h2{
   color: #6090d8;
   font-size: 36px;
   font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
 }
 
-.translate_content {
+.section_content {
+  display: block;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.section_content p {
   font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
 }
 /*end translation styles*/
+
+/*welcome styles*/
+#welcome {
+  margin-top: 90px;
+}
+
+#welcome::before{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(./assets/city.png) center center no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .65;
+}
+
+#welcome .section_text_container {
+  top: 200px;
+}
+/*end welcome styles*/
+
+/*translation styles*/
+#translation::before{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(./assets/energypic.jpg) center center no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .65;
+}
+/*end translation styles*/
+
+/*proofreading styles*/
+#proofreading::before{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(./assets/shippingpic.jpg) center center no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .65;
+}
+/*end proofreading styles*/
+
+/*presentation styles*/
+#presentation {
+  height: 600px;
+}
+
+#presentation::before{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(./assets/environmentpic.jpg) center center no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .65;
+}
+/*end presentation styles*/
 
 /*footer styles*/
 .footer_container {
@@ -177,10 +293,6 @@
     font-size: 40px;
     top: -15px;
     left: 15px;
-  }
-
-  .translate_container {
-    padding: 0 130px;
   }
 }
 

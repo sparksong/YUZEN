@@ -1,17 +1,18 @@
 import React from 'react';
 import '../App.css'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 class Navbar extends React.PureComponent {
     render() {
         return (
             <div class="navbar_container">
                 <div class="navbar_logo">
-                    <p>YUZEN Translation LLC</p>
+                    <AnchorLink offset='100' href="#welcome"><p>YUZEN Translation LLC</p></AnchorLink>
                 </div>
                 <div class="navbar_links">
-                    <a href="http://yuzentranslation.com">Translation</a>
-                    <a href="http://yuzentranslation.com">Proofreading</a>
-                    <a href="http://yuzentranslation.com">Presentation Coaching</a>
+                    <AnchorLink offset='100' href="#translation">Translation</AnchorLink>
+                    <AnchorLink offset='100' href="#proofreading">Proofreading</AnchorLink>
+                    <AnchorLink offset='100' href="#presentation">Presentation Coaching</AnchorLink>
                     <a href="http://yuzentranslation.com">Blog</a>
                 </div>
             </div>

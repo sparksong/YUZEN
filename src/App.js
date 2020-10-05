@@ -11,9 +11,6 @@ function App() {
   return (
     <>
       <Navbar />
-      <h2>
-        Yuzen Translation. (Under Construction)
-        </h2>
       <Welcome />
       <Translation />
       <Proofreading />
