@@ -81,7 +81,7 @@ code {
   color: #6090d8;
   font-size: 36px;
   font-weight: bold;
-  margin: 0;
+  margin: 13px 0;
   text-transform: uppercase;
 }
 
@@ -93,16 +93,113 @@ code {
   text-align: left;
 }
 
+.section_content::before {
+  display: block;
+  position: relative;
+  content: "";
+  background: #003399;
+  height: 4px;
+  width: 104%;
+  top: -2px;
+  left: -2%;
+}
+
 .section_content p {
   font-size: 16px;
   line-height: 1.5;
   color: #000000;
 }
 
-/*welcome styles*/
-#welcome {
+/*slogan*/
+#slogan {
   margin-top: 90px;
 }
+
+#slogan .section_text_container {
+  top: 200px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 125px;
+  background: rgba(255, 255, 255, .9);
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+   -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+       animation: fadein 2s;
+}
+
+#slogan .section_header h2 {
+  font-size: 70px;
+}
+
+#slogan .section_content {
+  text-align: center;
+}
+
+#slogan .section_content::before {
+    width: 0px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    -webkit-animation: expandThis 1s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+  
+@-webkit-keyframes expandThis {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 100%;
+    }
+}
+
+#slogan .section_content p {
+  font-size: 20px;
+}
+
+#slogan::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url('../assets/city.png') center center no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/*end slogan styles*/
+
+/*welcome styles*/
 
 #welcome::before {
   content: "";
@@ -117,11 +214,7 @@ code {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .65;
-}
-
-#welcome .section_text_container {
-  top: 200px;
+  opacity: 1;
 }
 
 /*end welcome styles*/
@@ -140,7 +233,7 @@ code {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .65;
+  opacity: 1;
 }
 
 /*end translation styles*/
@@ -159,7 +252,7 @@ code {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .65;
+  opacity: 1;
 }
 
 /*end proofreading styles*/
@@ -182,7 +275,7 @@ code {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .65;
+  opacity: 1;
 }
 
 /*end presentation styles*/

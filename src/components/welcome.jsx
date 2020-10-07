@@ -13,7 +13,9 @@ const Welcome = () => {
 						translators are bilingual and all possess a sound
 						knowledge of translating techniques and local knowledge
 						to ensure that what is intended in the source text is
-						accurately transcribed to the target text. All of the
+						accurately transcribed to the target text. 
+						</p> 
+						<p>All of the
 						documents are meticulously proofread by experienced
 						proofreaders. We also offer proofreading exclusively,
 						and presentation coaching in English. Client
