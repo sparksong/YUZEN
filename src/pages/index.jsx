@@ -2,10 +2,12 @@
 import Head from '../components/head'
 import Nav from '../components/nav'
 import Footer from '../components/footer'
+import Slogan from '../components/slogan'
 import Welcome from '../components/welcome'
 import Translation from '../components/translation'
 import Proofreading from '../components/proofreading'
 import PresentationCoaching from '../components/presentation-coaching'
+//import FullPage from '../components/fullpage'
 
 const siteTitle = 'YUZEN Translation'
 const siteDescription =
@@ -24,6 +26,7 @@ const MainApp = () => (
 		/>
 		<Nav />
 		<div>
+			<Slogan />
 			<Welcome />
 			<Translation />
 			<Proofreading />
