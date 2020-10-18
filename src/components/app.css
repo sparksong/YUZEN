@@ -111,12 +111,8 @@ code {
 }
 
 /*slogan*/
-#slogan {
-  margin-top: 90px;
-}
 
 #slogan .section_text_container {
-  top: 200px;
   max-width: 800px;
   margin: 0 auto;
   border-radius: 125px;
@@ -158,16 +154,11 @@ code {
   font-size: 20px;
 }
 
-#slogan::before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
+#slogan {
   background: url('../assets/city.png') center center no-repeat;
   background-size: 100% 100%;
-  z-index: -1;
-  background-attachment: fixed;
+  z-index: 2;
+  background-attachment: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,16 +192,11 @@ code {
 
 /*welcome styles*/
 
-#welcome::before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
+#welcome {
   background: url('../assets/city.png') center center no-repeat;
   background-size: 100% 100%;
-  z-index: -1;
-  background-attachment: fixed;
+  z-index: 2;
+  background-attachment: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -220,16 +206,11 @@ code {
 /*end welcome styles*/
 
 /*translation styles*/
-#translation::before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
+#translation {
   background: url('../assets/energypic.jpg') center center no-repeat;
   background-size: 100% 100%;
-  z-index: -1;
-  background-attachment: fixed;
+  z-index: 2;
+  background-attachment: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -239,16 +220,11 @@ code {
 /*end translation styles*/
 
 /*proofreading styles*/
-#proofreading::before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
+#proofreading {
   background: url('../assets/shippingpic.jpg') center center no-repeat;
   background-size: 100% 100%;
-  z-index: -1;
-  background-attachment: fixed;
+  z-index: 2;
+  background-attachment: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -262,16 +238,11 @@ code {
   height: 600px;
 }
 
-#presentation::before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
+#presentation {
   background: url('../assets/environmentpic.jpg') center center no-repeat;
   background-size: 100% 100%;
-  z-index: -1;
-  background-attachment: fixed;
+  z-index: 2;
+  background-attachment: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

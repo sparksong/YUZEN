@@ -1,6 +1,6 @@
 const Welcome = () => {
 	return (
-		<div id='welcome' className='section_container'>
+		<div id='welcome' className='section_container section'  data-anchor="slide2">
 			<div className='section_text_container'>
 				<div className='section_header'>
 					<h2>Welcome to YUZEN Translation</h2>
