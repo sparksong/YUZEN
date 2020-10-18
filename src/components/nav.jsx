@@ -4,20 +4,23 @@ const Nav = () => {
 	return (
 		<div className='navbar_container'>
 			<div className='navbar_logo'>
-				<AnchorLink offset='100' href='#welcome'>
+				<a href='#slide1'>
 					<p>YUZEN Translation LLC</p>
-				</AnchorLink>
+				</a>
 			</div>
 			<div className='navbar_links'>
-				<AnchorLink offset='100' href='#translation'>
+				<a href='#slide2'>
+					About
+				</a>
+				<a href='#slide3'>
 					Translation
-				</AnchorLink>
-				<AnchorLink offset='100' href='#proofreading'>
+				</a>
+				<a href='#slide4'>
 					Proofreading
-				</AnchorLink>
-				<AnchorLink offset='100' href='#presentation'>
+				</a>
+				<a href='#slide5'>
 					Presentation Coaching
-				</AnchorLink>
+				</a>
 				{/* <AnchorLink offset='100' href='#presentation'>
 					Contact Us
 				</AnchorLink> */}

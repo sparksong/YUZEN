@@ -1,6 +1,6 @@
 const Slogan = () => {
 	return (
-		<div id='slogan' className='section_container'>
+		<div id='slogan' className='section_container section' data-anchor="slide1">
 			<div className='section_text_container'>
 				<div className='section_header'>
 					<h2>YUZEN Translation</h2>

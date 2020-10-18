@@ -1,6 +1,6 @@
 const Proofreading = () => {
 	return (
-		<div id='proofreading' className='section_container'>
+		<div id='proofreading' className='section_container section' data-anchor="slide4">
 			<div className='section_text_container'>
 				<div className='section_header'>
 					<h2>Proofreading</h2>

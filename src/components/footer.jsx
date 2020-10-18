@@ -6,6 +6,7 @@ import PhoneIcon from '@material-ui/icons/Phone'
 
 const Footer = () => {
 	return (
+		<div className='section fp-auto-height'>
 		<div className='footer_container'>
 			<div className='social_contact_container'>
 				<div className='social_media'>
@@ -35,6 +36,7 @@ const Footer = () => {
 			<div className='copyright'>
 				<p>© 2016 - 2020 YUZEN Translation LLC</p>
 			</div>
+		</div>
 		</div>
 	)
 }
