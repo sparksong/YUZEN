@@ -353,12 +353,13 @@ code {
 @media screen and (min-width: 550px) {
 
   .footer_container {
-    height: 150px;
+    height: 185px;
   }
 
   .contact_us {
     float: right;
     right: 5px;
+    top: 23px;
   }
 
   .social_media {
