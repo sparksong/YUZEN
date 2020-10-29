@@ -1,6 +1,10 @@
 const PresentationCoaching = () => {
 	return (
-		<div id='presentation' className='section_container section' data-anchor="slide5">
+		<div
+			id='presentation_section'
+			className='section_container section'
+			data-anchor='presentationcoaching'
+		>
 			<div className='section_text_container'>
 				<div className='section_header'>
 					<h2>Presentation Coaching</h2>
