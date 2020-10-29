@@ -17,11 +17,16 @@ const siteURL = 'https://yuzentranslation.com'
 
 const MainApp = () => (
 	<ReactFullpage
-		//fullpage options
 		licenseKey={'71B7E327-972A4E81-AFC390EB-96593BFC'}
 		scrollingSpeed={1000}
 		fixedElements={'.navbar_container'}
-		anchors={['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6']}
+		anchors={[
+			'main',
+			'about',
+			'translation',
+			'proofreading',
+			'presentationcoaching',
+		]}
 		render={({ state, fullpageApi }) => {
 			return (
 				<ReactFullpage.Wrapper>
