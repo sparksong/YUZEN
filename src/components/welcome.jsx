@@ -24,6 +24,11 @@ const Welcome = () => {
 						of our company YUZEN Translation.
 					</p>
 				</div>
+				<div class="icons_container">
+					<img class="icon" src="/static/assets/Energy-icon.jpg" title="Energy" alt="Image of Energy Icon"/>
+					<img class="icon" src="/static/assets/Environment-icon.jpg" title="Energy" alt="Image of Energy Icon"/>
+					<img class="icon" src="/static/assets/Shipping-icon.jpg" title="Energy" alt="Image of Energy Icon"/>
+				</div>
 			</div>
 		</div>
 	)

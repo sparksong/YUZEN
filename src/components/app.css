@@ -64,12 +64,11 @@ code {
 }
 
 .section_text_container {
-  background: #FFFFFF;
   position: relative;
   display: block;
-  top: -20px;
+  top: 0px;
   padding: 35px 50px 25px 50px;
-  box-shadow: 10px 10px 35px #999999;
+  background: rgba(255, 255, 255, .9);
 }
 
 .section_header {
@@ -104,10 +103,22 @@ code {
   left: -2%;
 }
 
+.section_content::after {
+  display: block;
+  position: relative;
+  content: "";
+  background: #003399;
+  height: 4px;
+  width: 104%;
+  bottom: -2px;
+  left: -2%;
+}
+
 .section_content p {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.75;
   color: #000000;
+  letter-spacing: .75px;
 }
 
 /*slogan*/
@@ -140,6 +151,10 @@ code {
     -webkit-animation: expandThis 1s ease-in;
     -webkit-animation-fill-mode: forwards;
 }
+
+#slogan .section_content::after {
+  display: none;
+}
   
 @-webkit-keyframes expandThis {
     0% {
@@ -155,7 +170,7 @@ code {
 }
 
 #slogan {
-  background: url('../assets/city.png') center center no-repeat;
+  background: url('../../public/static/assets/city.png') center center no-repeat;
   background-size: 100% 100%;
   z-index: 2;
   background-attachment: relative;
@@ -193,7 +208,7 @@ code {
 /*welcome styles*/
 
 #welcome {
-  background: url('../assets/city.png') center center no-repeat;
+  background: #FFFFFF;
   background-size: 100% 100%;
   z-index: 2;
   background-attachment: relative;
@@ -201,13 +216,33 @@ code {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
+}
+
+#welcome .section_text_container {
+  box-shadow: none;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#welcome .section_content {
+  max-width: 900px;
+}
+
+.icons_container {
+  display: block;
+  margin: 15px 0 0 0;
+}
+
+.icons_container .icon{
+  width: 80px;
+  margin: 0 100px;
 }
 
 /*end welcome styles*/
 
 /*translation styles*/
 #translation {
-  background: url('../assets/energypic.jpg') center center no-repeat;
+  background: url('../../public/static/assets/energypic.jpg') center center no-repeat;
   background-size: 100% 100%;
   z-index: 2;
   background-attachment: relative;
@@ -217,12 +252,22 @@ code {
   opacity: 1;
 }
 
+#translation::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: rgb(0,0,0, .1);
+}
+
 /*end translation styles*/
 
 /*proofreading styles*/
 #proofreading {
-  background: url('../assets/shippingpic.jpg') center center no-repeat;
-  background-size: 100% 100%;
+  /*background: url('../assets/shippingpic.jpg') center center no-repeat;
+  background-size: 100% 100%;*/
+  background: #FFFFFF;
   z-index: 2;
   background-attachment: relative;
   background-position: center;
@@ -239,7 +284,7 @@ code {
 }
 
 #presentation {
-  background: url('../assets/environmentpic.jpg') center center no-repeat;
+  background: url('../../public/static/assets/environmentpic.jpg') center center no-repeat;
   background-size: 100% 100%;
   z-index: 2;
   background-attachment: relative;
