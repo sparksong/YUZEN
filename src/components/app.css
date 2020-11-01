@@ -15,7 +15,7 @@ code {
 .navbar_container {
   height: 100px;
   width: 100%;
-  position: fixed;
+  position: fixed !important;
   display: block;
   background: #003399;
   top: 0;
@@ -112,7 +112,7 @@ code {
 
 /*slogan*/
 
-#slogan .section_text_container {
+#slogan_section .section_text_container {
   max-width: 800px;
   margin: 0 auto;
   border-radius: 125px;
@@ -124,15 +124,15 @@ code {
        animation: fadein 2s;
 }
 
-#slogan .section_header h2 {
+#slogan_section .section_header h2 {
   font-size: 70px;
 }
 
-#slogan .section_content {
+#slogan_section .section_content {
   text-align: center;
 }
 
-#slogan .section_content::before {
+#slogan_section .section_content::before {
     width: 0px;
     margin: 0 auto;
     left: 0;
@@ -150,11 +150,11 @@ code {
     }
 }
 
-#slogan .section_content p {
+#slogan_section .section_content p {
   font-size: 20px;
 }
 
-#slogan {
+#slogan_section {
   background: url('../assets/city.png') center center no-repeat;
   background-size: 100% 100%;
   z-index: 2;
@@ -192,7 +192,7 @@ code {
 
 /*welcome styles*/
 
-#welcome {
+#welcome_section {
   background: url('../assets/city.png') center center no-repeat;
   background-size: 100% 100%;
   z-index: 2;
@@ -206,7 +206,7 @@ code {
 /*end welcome styles*/
 
 /*translation styles*/
-#translation {
+#translation_section {
   background: url('../assets/energypic.jpg') center center no-repeat;
   background-size: 100% 100%;
   z-index: 2;
@@ -220,7 +220,7 @@ code {
 /*end translation styles*/
 
 /*proofreading styles*/
-#proofreading {
+#proofreading_section {
   background: url('../assets/shippingpic.jpg') center center no-repeat;
   background-size: 100% 100%;
   z-index: 2;
@@ -234,11 +234,11 @@ code {
 /*end proofreading styles*/
 
 /*presentation styles*/
-#presentation {
+#presentation_section {
   height: 600px;
 }
 
-#presentation {
+#presentation_section {
   background: url('../assets/environmentpic.jpg') center center no-repeat;
   background-size: 100% 100%;
   z-index: 2;

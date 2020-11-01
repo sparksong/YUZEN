@@ -1,6 +1,6 @@
 const Translation = () => {
 	return (
-		<div id='translation' className='section_container section' data-anchor="slide3">
+		<div id='translation_section' className='section_container section' data-anchor="translation">
 			<div className='section_text_container'>
 				<div className='section_header'>
 					<h2>Translation</h2>
