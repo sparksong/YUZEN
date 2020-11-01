@@ -1,48 +1,34 @@
 import Head from '../components/head'
 import NavBar from '../components/navbar'
 import Footer from '../components/footer'
-import Slogan from '../components/slogan'
-import Welcome from '../components/welcome'
-import Translation from '../components/translation'
-import Proofreading from '../components/proofreading'
-import PresentationCoaching from '../components/presentation-coaching'
 import ReactFullpage from '@fullpage/react-fullpage'
-
-const siteTitle = 'YUZEN Translation'
-const siteDescription =
-	'Translation company based in Tokyo - Trust in us to take care of all your translation needs.'
-const siteKeywords =
-	'translation, yuzen, translating, translate, coaching, presentation, proofreading, language, Japanese, English'
-const siteURL = 'https://yuzentranslation.com'
+import Section from '../components/section'
+import {
+	sloganProps,
+	welcomeProps,
+	translationProps,
+	proofreadingProps,
+	presentationProps,
+} from '../utils/section-props'
+import { FULL_PAGE_KEY, ANCHOR_LIST } from '../utils/constants'
 
 const MainApp = () => (
 	<ReactFullpage
-		licenseKey={'71B7E327-972A4E81-AFC390EB-96593BFC'}
+		licenseKey={FULL_PAGE_KEY}
 		scrollingSpeed={1000}
 		fixedElements={'.navbar_container'}
-		anchors={[
-			'main',
-			'about',
-			'translation',
-			'proofreading',
-			'presentationcoaching',
-		]}
+		anchors={ANCHOR_LIST}
 		render={({ state, fullpageApi }) => {
 			return (
 				<ReactFullpage.Wrapper>
-					<Head
-						title={siteTitle}
-						description={siteDescription}
-						keywords={siteKeywords}
-						url={siteURL}
-					/>
+					<Head />
 					<NavBar />
 					<div>
-						<Slogan />
-						<Welcome />
-						<Translation />
-						<Proofreading />
-						<PresentationCoaching />
+						<Section {...sloganProps} />
+						<Section {...welcomeProps} />
+						<Section {...translationProps} />
+						<Section {...proofreadingProps} />
+						<Section {...presentationProps} />
 						<Footer />
 					</div>
 				</ReactFullpage.Wrapper>

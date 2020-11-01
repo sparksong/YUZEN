@@ -310,12 +310,12 @@ code {
 }
 
 .social_media .social_media_icons {
-  top: 11px;
+  top: 7px;
   position: relative;
 }
 
 .contact_icons {
-  top: 6px;
+  top: 0px;
   position: relative;
   transform: scale(0.7);
 }
