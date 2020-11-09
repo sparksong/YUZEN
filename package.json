@@ -23,7 +23,7 @@
 		"bootstrap": "^4.5.3",
 		"fullpage.js": "^3.0.9",
 		"html-react-parser": "^0.14.0",
-		"next": "^9.5.5",
+		"next": "^10.0.1",
 		"object-path": ">=0.11.5",
 		"react": "^16.14.0",
 		"react-anchor-link-smooth-scroll": "^1.0.12",
