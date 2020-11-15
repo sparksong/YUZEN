@@ -1,4 +1,7 @@
 import { SITE_TITLE } from './constants'
+import IconDiv from '../components/icon-div'
+import ArrowDiv from '../components/arrow-div'
+
 export const sloganProps = {
 	id: 'slogan_section',
 	anchor: 'main',
@@ -7,6 +10,7 @@ export const sloganProps = {
 	titleJapanese: SITE_TITLE,
 	contentJapanese: `<p>Trust in us to take care of all your translation needs </p>`,
 	isJapanese: false,
+	arrow: <ArrowDiv />
 }
 
 export const welcomeProps = {
@@ -17,6 +21,7 @@ export const welcomeProps = {
 	titleJapanese: `はじめに`,
 	contentJapanese: `<p> 私どもは、東京の中心を拠点にする少数精鋭の翻訳会社です。エネルギー、環境、船舶、海外の博物館といった専門性の高い分野にて、 ひとつの貴重なプロジェクトが完了するまでお客様のご意向を念頭に置き、オーダーメイドの対応を致しております。設立以来、クライアントの満足度こそが、 納期厳守かつ高品質な翻訳サービスの提供につながる当社の	業務の原動力となっております。社名であるYUZEN(悠然)は、クライアント様が堂々としていられるための、私どもの使命を表しています。日本語→英語、英語→日本語を主とした、英語を母国語としない読者にも分かりやすい英文から、 技巧を凝らしたプロフェッショナルな翻訳サービスまで対応致します。すべての文書は 、経験豊富な校正者によって、冠詞や定冠詞までも細心の注意を払いプルーフリード(英文校正)を致しております。翻訳のほか、英文校正のみの提供もございます。まずはお気軽に、 トライアル・お見積もりのご依頼をお待ち致しております。通常の翻訳のほか、プルーフリードのみや英語プレゼンのコーチング等も修士号以上を修得したスタッフが対応致しています。私どもは細部にわたる注意力と精度にこだわることに誇りを持ちます。専門性を徹底しサービスを提供すること、それがYUZENトランスレーションの創立の精神です。</p>`,
 	isJapanese: false,
+	icons: <IconDiv />
 }
 
 export const translationProps = {
