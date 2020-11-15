@@ -15,7 +15,7 @@ code {
 .navbar_container {
   height: 100px;
   width: 100%;
-  position: fixed;
+  position: fixed !important;
   display: block;
   background: #003399;
   top: 0;
@@ -123,7 +123,7 @@ code {
 
 /*slogan*/
 
-#slogan .section_text_container {
+#slogan_section .section_text_container {
   max-width: 800px;
   margin: 0 auto;
   border-radius: 125px;
@@ -135,15 +135,15 @@ code {
        animation: fadein 2s;
 }
 
-#slogan .section_header h2 {
+#slogan_section .section_header h2 {
   font-size: 70px;
 }
 
-#slogan .section_content {
+#slogan_section .section_content {
   text-align: center;
 }
 
-#slogan .section_content::before {
+#slogan_section .section_content::before {
     width: 0px;
     margin: 0 auto;
     left: 0;
@@ -152,9 +152,48 @@ code {
     -webkit-animation-fill-mode: forwards;
 }
 
-#slogan .section_content::after {
+#slogan_section .section_content::after {
   display: none;
 }
+
+#slogan_section .arrow {
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: -180px;
+  width: 90px;
+  height: 90px;
+}
+
+#slogan_section .arrow::before {
+  content:"";
+  background: #003399;
+  border-radius: 50%;
+  height: 63px;
+  width: 63px;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 14px;
+  top: 7px;
+}
+
+/*#slogan_section .arrow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background: #000000;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(134deg);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}*/
   
 @-webkit-keyframes expandThis {
     0% {
@@ -165,11 +204,11 @@ code {
     }
 }
 
-#slogan .section_content p {
+#slogan_section .section_content p {
   font-size: 20px;
 }
 
-#slogan {
+#slogan_section {
   background: url('../../public/static/assets/city.png') center center no-repeat;
   background-size: 100% 100%;
   z-index: 2;
@@ -207,7 +246,7 @@ code {
 
 /*welcome styles*/
 
-#welcome {
+#welcome_section {
   background: #FFFFFF;
   background-size: 100% 100%;
   z-index: 2;
@@ -241,7 +280,7 @@ code {
 /*end welcome styles*/
 
 /*translation styles*/
-#translation {
+#translation_section {
   background: url('../../public/static/assets/energypic.jpg') center center no-repeat;
   background-size: 100% 100%;
   z-index: 2;
@@ -264,7 +303,7 @@ code {
 /*end translation styles*/
 
 /*proofreading styles*/
-#proofreading {
+#proofreading_section {
   /*background: url('../assets/shippingpic.jpg') center center no-repeat;
   background-size: 100% 100%;*/
   background: #FFFFFF;
@@ -279,11 +318,11 @@ code {
 /*end proofreading styles*/
 
 /*presentation styles*/
-#presentation {
+#presentation_section {
   height: 600px;
 }
 
-#presentation {
+#presentation_section {
   background: url('../../public/static/assets/environmentpic.jpg') center center no-repeat;
   background-size: 100% 100%;
   z-index: 2;
@@ -355,12 +394,12 @@ code {
 }
 
 .social_media .social_media_icons {
-  top: 11px;
+  top: 7px;
   position: relative;
 }
 
 .contact_icons {
-  top: 6px;
+  top: 0px;
   position: relative;
   transform: scale(0.7);
 }
@@ -398,12 +437,13 @@ code {
 @media screen and (min-width: 550px) {
 
   .footer_container {
-    height: 150px;
+    height: 185px;
   }
 
   .contact_us {
     float: right;
     right: 5px;
+    top: 23px;
   }
 
   .social_media {
