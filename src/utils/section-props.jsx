@@ -1,4 +1,7 @@
 import { SITE_TITLE } from './constants'
+import IconDiv from '../components/icon-div'
+import ArrowDiv from '../components/arrow-div'
+
 export const sloganProps = {
 	id: 'slogan_section',
 	anchor: 'main',
@@ -7,6 +10,7 @@ export const sloganProps = {
 	titleJapanese: SITE_TITLE,
 	contentJapanese: ``,
 	isJapanese: false,
+	arrow: <ArrowDiv />
 }
 
 export const welcomeProps = {
@@ -17,6 +21,7 @@ export const welcomeProps = {
 	titleJapanese: `はじめに`,
 	contentJapanese: ``,
 	isJapanese: false,
+	icons: <IconDiv />
 }
 
 export const translationProps = {
