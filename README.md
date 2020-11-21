@@ -1,8 +1,8 @@
 # YUZEN
 
-Hacktoberfest PR's are accepted! 
-In the process of creating specific tasks that people can work on, will get updated soon!
+Repository for YUZEN Translation website - changes in progress to upgrade current site. 
+Translation company based in Toyko, Japan.
 
-This is the repository to modernize and make the YUZEN Translation site better with React / Next JS. 
+Created using React / Next JS.
 
 Feel free to reach out with suggestions or questions!
