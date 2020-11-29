@@ -7,9 +7,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.navbar-nav {
+  background: #003399;
+}
+
+.navbar_container.navbar {
+ padding: 0;
+}
+
+.navbar-toggler {
+  margin: 30px 10px;
+}
+
+.navbar-nav .nav-link {
+  padding-left: 10px;
 }
 
 .navbar_container {
@@ -53,13 +64,24 @@ code {
   font-weight: bold;
 }
 
+.translate-button {
+  top: 30px;
+  position: fixed;
+  right: 20px;
+  z-index: 10;
+  color: #003399;
+}
+
+.translate-button.btn-outline-light:hover {
+  color: #003399;
+}
+
 /*start section styles*/
 .section_container {
   display: block;
   position: relative;
   top: 15px;
   text-align: center;
-  /*background-image:linear-gradient(rgba(255,255,255,.9), rgba(0,0,0,.2), rgba(0,0,0,.2), rgba(255,255,255, .9));*/
   height: 900px;
 }
 

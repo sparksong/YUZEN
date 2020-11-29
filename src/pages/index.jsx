@@ -11,30 +11,73 @@ import {
 	presentationProps,
 } from '../utils/section-props'
 import { FULL_PAGE_KEY, ANCHOR_LIST } from '../utils/constants'
+import Button from 'react-bootstrap/Button'
+import { useEffect, useState } from 'react'
 
-const MainApp = () => (
-	<ReactFullpage
-		licenseKey={FULL_PAGE_KEY}
-		scrollingSpeed={1000}
-		fixedElements={'.navbar_container'}
-		anchors={ANCHOR_LIST}
-		render={({ state, fullpageApi }) => {
-			return (
-				<ReactFullpage.Wrapper>
-					<Head />
-					<NavBar />
-					<div>
-						<Section {...sloganProps} />
-						<Section {...welcomeProps} />
-						<Section {...translationProps} />
-						<Section {...proofreadingProps} />
-						<Section {...presentationProps} />
-						<Footer />
-					</div>
-				</ReactFullpage.Wrapper>
-			)
-		}}
-	/>
-)
+const MainApp = function () {
+	const [isJapanese, setIsJapanese] = useState(true)
+	const languageSwitch = () => {
+		let newValue = !isJapanese
+		console.log('IsJapanese new value:', isJapanese)
+		setIsJapanese(newValue)
+	}
+
+	return (
+		<ReactFullpage
+			licenseKey={FULL_PAGE_KEY}
+			scrollingSpeed={1000}
+			fixedElements={'.navbar_container, .translate-button'}
+			anchors={ANCHOR_LIST}
+			render={({ state, fullpageApi }) => {
+				return (
+					<ReactFullpage.Wrapper>
+						<Head />
+						<NavBar {...{ isJapanese: isJapanese }} />
+						<Button
+							variant='outline-light'
+							className='translate-button'
+							onClick={languageSwitch}
+						>
+							{isJapanese ? 'Japanese' : 'English'}
+						</Button>
+						<div>
+							<Section
+								{...{
+									...sloganProps,
+									isJapanese: isJapanese,
+								}}
+							/>
+							<Section
+								{...{
+									...welcomeProps,
+									isJapanese: isJapanese,
+								}}
+							/>
+							<Section
+								{...{
+									...translationProps,
+									isJapanese: isJapanese,
+								}}
+							/>
+							<Section
+								{...{
+									...proofreadingProps,
+									isJapanese: isJapanese,
+								}}
+							/>
+							<Section
+								{...{
+									...presentationProps,
+									isJapanese: isJapanese,
+								}}
+							/>
+							<Footer />
+						</div>
+					</ReactFullpage.Wrapper>
+				)
+			}}
+		/>
+	)
+}
 
 export default MainApp

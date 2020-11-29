@@ -22,16 +22,7 @@ const Section = (props) => {
 							: props.contentEnglish
 					)}
 				</div>
-				{props.icons
-					?
-					props.icons
-					:
-					<></>}
-				{props.arrow
-					?
-					props.arrow
-					:
-					<></>}
+				{props.icons ? props.icons : <></>}
 			</div>
 		</div>
 	)
