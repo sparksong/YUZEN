@@ -27,7 +27,7 @@ body {
   height: 100px;
   width: 100%;
   position: fixed !important;
-  display: block;
+  display: flex;
   background: #003399;
   top: 0;
   border-bottom: 5px solid #000000;
