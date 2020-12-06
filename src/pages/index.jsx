@@ -12,13 +12,12 @@ import {
 } from '../utils/section-props'
 import { FULL_PAGE_KEY, ANCHOR_LIST } from '../utils/constants'
 import Button from 'react-bootstrap/Button'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 const MainApp = function () {
 	const [isJapanese, setIsJapanese] = useState(true)
 	const languageSwitch = () => {
 		let newValue = !isJapanese
-		console.log('IsJapanese new value:', isJapanese)
 		setIsJapanese(newValue)
 	}
 
@@ -38,7 +37,7 @@ const MainApp = function () {
 							className='translate-button'
 							onClick={languageSwitch}
 						>
-							{isJapanese ? 'Japanese' : 'English'}
+							{isJapanese ? 'English' : 'Japanese'}
 						</Button>
 						<div>
 							<Section

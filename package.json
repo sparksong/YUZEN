@@ -18,16 +18,16 @@
 	"license": "ISC",
 	"dependencies": {
 		"@fullpage/react-fullpage": "^0.1.18",
-		"@material-ui/core": "^4.11.0",
+		"@material-ui/core": "^4.11.1",
 		"@material-ui/icons": "^4.9.1",
-		"bootstrap": "^4.5.3",
-		"fullpage.js": "^3.0.9",
-    	"next": "^10.0.2",
+		"bootstrap": "^4.5.0",
 		"html-react-parser": "^0.14.2",
+		"jquery": "^3.5.1",
+		"next": "^10.0.3",
 		"object-path": ">=0.11.5",
-		"react": "^16.14.0",
-		"react-anchor-link-smooth-scroll": "^1.0.12",
+		"popper.js": "^1.16.1",
+		"react": "^16.8.0",
 		"react-bootstrap": "^1.4.0",
-		"react-dom": "^16.14.0"
+		"react-dom": "^16.8.0"
 	}
 }

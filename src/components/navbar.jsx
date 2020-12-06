@@ -1,5 +1,4 @@
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
+import { Nav, Navbar } from 'react-bootstrap'
 
 const NavBar = (props) => {
 	return (
