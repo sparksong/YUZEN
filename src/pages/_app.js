@@ -1,4 +1,4 @@
-import '../components/app.css'
+import './app.css'
 import 'bootstrap/dist/css/bootstrap.css'
 // import App from 'next/app'
 

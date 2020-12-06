@@ -69,7 +69,6 @@ body {
   position: fixed;
   right: 20px;
   z-index: 10;
-  color: #003399;
 }
 
 .translate-button.btn-outline-light:hover {
@@ -170,6 +169,8 @@ body {
     margin: 0 auto;
     left: 0;
     right: 0;
+    animation: expandThis 1s ease-in;
+    animation-fill-mode: forwards;
     -webkit-animation: expandThis 1s ease-in;
     -webkit-animation-fill-mode: forwards;
 }
@@ -202,7 +203,7 @@ body {
   top: 7px;
 }
   
-@-webkit-keyframes expandThis {
+@keyframes expandThis {
     0% {
       width: 0px;
     }
