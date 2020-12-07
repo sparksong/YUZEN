@@ -26,7 +26,7 @@
 		"next": "^10.0.3",
 		"object-path": ">=0.11.5",
 		"popper.js": "^1.16.1",
-		"react": "^16.8.0",
+		"react": "^17.0.1",
 		"react-bootstrap": "^1.4.0",
 		"react-dom": "^16.8.0"
 	}
