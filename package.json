@@ -21,7 +21,7 @@
 		"@material-ui/core": "^4.11.1",
 		"@material-ui/icons": "^4.9.1",
 		"bootstrap": "^4.5.0",
-		"html-react-parser": "^0.14.2",
+		"html-react-parser": "^1.0.0",
 		"jquery": "^3.5.1",
 		"next": "^10.0.3",
 		"object-path": ">=0.11.5",
